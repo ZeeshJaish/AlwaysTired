@@ -1,4 +1,3 @@
-import React from 'react';
 import redCanImg from '../assets/red_can_v2.png';
 
 export default function RedCan({ className = '' }) {

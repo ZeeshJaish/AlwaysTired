@@ -1,4 +1,3 @@
-import React from 'react';
 import purpleCanImg from '../assets/purple_can_v2.png';
 
 export default function PurpleCan({ className = '' }) {

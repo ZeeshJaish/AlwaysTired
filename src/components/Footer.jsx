@@ -2,7 +2,7 @@ import Graphic from "./graphics/GraphicElements";
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-brand-purple text-brand-offwhite pt-32 pb-8 px-8 border-t-8 border-brand-black overflow-hidden relative z-[50]">
+        <footer className="w-full bg-brand-purple text-brand-offwhite pt-32 pb-8 px-8 border-t-8 border-brand-black overflow-hidden relative z-[50] grain-overlay">
             <div className="absolute inset-0 bg-noise pointer-events-none mix-blend-overlay opacity-20"></div>
 
             <Graphic type="circle-outline" className="w-[100vw] h-[100vw] bottom-[-50vw] right-[-50vw] text-brand-black opacity-10" />
@@ -20,12 +20,12 @@ export default function Footer() {
                         Sleep Can't Be Bottled.
                     </p>
                     <p className="font-body text-xl font-bold mt-4">
-                        Drink up instead.
+                        But energy? <span className="hand-underline text-brand-mint">We handled that.</span> ⚡
                     </p>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-6">
-                    <a href="#" className="bg-brand-mint text-brand-black w-24 h-24 flex items-center justify-center brutal-border brutal-shadow hover:bg-brand-red hover:text-brand-offwhite transition-none group transform hover:rotate-6 hover:scale-110">
+                    <a href="https://instagram.com/alwaystired" target="_blank" rel="noopener noreferrer" className="bg-brand-mint text-brand-black w-24 h-24 flex items-center justify-center brutal-border brutal-shadow hover:bg-brand-red hover:text-brand-offwhite transition-none group transform hover:rotate-6 hover:scale-110">
                         <span className="font-heading text-4xl">IG</span>
                     </a>
                     <a href="#" className="bg-brand-mint text-brand-black w-24 h-24 flex items-center justify-center brutal-border brutal-shadow hover:bg-brand-red hover:text-brand-offwhite transition-none group transform hover:-rotate-6 hover:scale-110">

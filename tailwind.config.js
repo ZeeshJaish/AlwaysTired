@@ -13,6 +13,9 @@ export default {
         'brand-mint': '#00fa9a',
         'brand-offwhite': '#f5f5f0',
         'brand-black': '#000000',
+        'brand-yellow': '#f5e642',
+        'brand-violet': '#2d1b69',
+        'brand-green': '#39ff14',
       },
       fontFamily: {
         heading: ['"Archivo Black"', 'sans-serif'],
@@ -21,20 +24,27 @@ export default {
       boxShadow: {
         'hard': '6px 6px 0px 0px rgba(0,0,0,1)',
         'hard-hover': '12px 12px 0px 0px rgba(0,0,0,1)',
+        'hard-sm': '4px 4px 0px 0px rgba(0,0,0,1)',
       },
       animation: {
         'marquee': 'marquee 25s linear infinite',
+        'marquee-reverse': 'marqueeReverse 30s linear infinite',
         'drift-slow': 'drift 10s ease-in-out infinite',
         'drift-fast': 'drift 6s ease-in-out infinite reverse',
         'float-slow': 'float 6s ease-in-out infinite',
         'spin-slow': 'spin 12s linear infinite',
         'bubble-rise': 'bubbleRise 8s linear infinite',
-        'glitch': 'glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite'
+        'glitch': 'glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite',
+        'glitch-rgb': 'glitchRGB 0.5s cubic-bezier(.25,.46,.45,.94) both',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        marqueeReverse: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
         drift: {
           '0%': { transform: 'translate(0, 0) rotate(0deg)' },
@@ -60,6 +70,11 @@ export default {
           '60%': { transform: 'translate(2px, 2px)' },
           '80%': { transform: 'translate(2px, -2px)' },
           '100%': { transform: 'translate(0)' }
+        },
+        glitchRGB: {
+          '0%': { textShadow: '3px 0 #ff0000, -3px 0 #00ffff', transform: 'translate(0)' },
+          '50%': { textShadow: '-3px 2px #ff0000, 3px -2px #00ffff', transform: 'translate(-2px, 1px)' },
+          '100%': { textShadow: 'none', transform: 'translate(0)' },
         }
       }
     },
