@@ -39,10 +39,10 @@ const productBenefits = [
 ]
 
 const researchStats = [
-  { number: '18', label: 'Gen Z respondents in Delhi NCR' },
+  { number: '200+', label: 'Gen Z opinions collected' },
   { number: '94%', label: 'instant brand-name recall' },
-  { number: '15/18', label: 'rated cans shelf-worthy' },
-  { number: '14/18', label: 'would switch if taste matched' },
+  { number: '83%', label: 'rated cans shelf-worthy' },
+  { number: '78%', label: 'would switch if taste matched' },
 ]
 
 const concepts = [
